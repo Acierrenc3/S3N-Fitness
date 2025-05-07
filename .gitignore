@@ -12,3 +12,6 @@
 *.log
 tmp/
 .DS_Store
+
+# Ignorar htmls
+/public/asistente.html
