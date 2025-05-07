@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>S3N Fitness</title>
+
+  <!-- Bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bi bi-lightning-fill"></i> S3N Fitness</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="rutina.html"><i class="bi bi-calendar3"></i> Rutina</a></li>
+          <li class="nav-item"><a class="nav-link" href="videos.html"><i class="bi bi-play-circle"></i> Videos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="bi bi-envelope-fill"></i> Contacto</a></li>
+          <li class="nav-item">
+            <button id="toggle-dark-mode" class="btn btn-outline-light ml-2" title="Alternar modo oscuro">
+              <i class="bi bi-moon-fill"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero -->
+<header class="hero text-center text-light">
+  <div class="container">
+    <h1>Transforma tu cuerpo</h1>
+    <p>Rutinas semanales para quemar grasa y ganar músculo.</p>
+    <a href="#calendario" class="btn btn-primary btn-lg mt-3">Ver Rutina</a>
+  </div>
+</header>
+
+<!-- Calendario mensual -->
+<section class="container my-5" id="calendario">
+  <h2 class="text-center text-primary mb-4">Calendario de Entrenamiento Mensual</h2>
+
+  <div class="row justify-content-center mb-4">
+    <div class="col-md-6 text-center">
+      <label for="monthSelector">Seleccionar mes:</label>
+      <select class="form-control" id="monthSelector"></select>
+    </div>
+  </div>
+
+  <div class="row" id="calendar"></div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white text-center py-3 mt-5">
+  <div class="container">
+    <p class="mb-0">© 2025 - S3N Fitness by Acie</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

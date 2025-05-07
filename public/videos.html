@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Videos de Ejercicios</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#"><i class="bi bi-lightning-fill"></i> S3N Fitness</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="rutina.html"><i class="bi bi-calendar3"></i> Rutina</a></li>
+        <li class="nav-item"><a class="nav-link active" href="videos.html"><i class="bi bi-play-circle"></i> Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="bi bi-envelope-fill"></i> Contacto</a></li>
+        <li class="nav-item">
+          <button id="toggle-dark-mode" class="btn btn-outline-light ml-2" title="Alternar modo oscuro">
+            <i class="bi bi-moon-fill"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Contenido -->
+<div class="container my-5">
+  <h2 class="text-center text-primary mb-4">Videos de Ejercicios</h2>
+  <input type="text" id="buscadorVideos" class="form-control mb-4" placeholder="Buscar ejercicio...">
+
+  <!-- Push -->
+  <h3 class="text-primary mt-4 mb-3">Día Push</h3>
+  <div class="row" id="videos-push">
+    <!-- Se insertarán dinámicamente desde el script -->
+  </div>
+
+  <!-- Pull -->
+  <h3 class="text-success mt-5 mb-3">Día Pull</h3>
+  <div class="row" id="videos-pull">
+    <!-- Se insertarán dinámicamente desde el script -->
+  </div>
+
+  <!-- Piernas y Full Body -->
+  <h3 class="text-warning mt-5 mb-3">Día Piernas + Full Body</h3>
+  <div class="row" id="videos-piernas">
+    <!-- Se insertarán dinámicamente desde el script -->
+  </div>
+</div>
+
+<hr>
+<h3 class="text-center text-warning mt-5">⭐ Mis Videos Favoritos</h3>
+
+<div class="text-center mb-4">
+  <button id="btn-borrar-favoritos" class="btn btn-danger mb-3" onclick="borrarFavoritos()">
+    🗑️ Borrar todos los favoritos
+  </button>
+</div>
+
+<div class="row" id="favoritos-container"></div>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

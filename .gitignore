@@ -1,0 +1,14 @@
+# Ignorar el backend y sus scripts
+/backend/*.php
+
+# Archivos de configuración con credenciales
+.env
+
+# Carpetas de build o distribución
+/dist/
+/public/build/
+
+# Logs y temporales
+*.log
+tmp/
+.DS_Store
